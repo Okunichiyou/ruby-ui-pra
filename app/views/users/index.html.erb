@@ -1,0 +1,9 @@
+<h1>User Information</h1>
+<% @users.each do |user| %>
+  <div>
+    <p><strong>Name:</strong> <%= user.name %></p>
+    <p><strong>Email:</strong> <%= user.email %></p>
+  </div>
+<% end %>
+
+<a href="<%= root_path %>">Back to Top</a>
