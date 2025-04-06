@@ -1,6 +1,8 @@
 <h1>Top#index</h1>
 <p>Find me in app/views/top/index.html.erb</p>
 
-<a>
-  <%= link_to 'User Information', users_path %>
-</a>
+<div>
+  <%= render RubyUI::Button do%>
+    <%= link_to 'User Information', users_path %>
+  <% end %>
+</div>
